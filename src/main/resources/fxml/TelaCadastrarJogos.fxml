@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaCadastrarJogosController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Nome" />
+      <TextField fx:id="nomeTextField" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="251.0" promptText="Nome do Jogo" />
+      <Button fx:id="concluirActionHandler" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" text="Concluir" />
+      <Button fx:id="voltarActionHandler" layoutX="467.0" layoutY="361.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>
