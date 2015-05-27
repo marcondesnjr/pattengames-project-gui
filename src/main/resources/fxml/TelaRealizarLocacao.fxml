@@ -7,17 +7,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaRealizarLocacaoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaRealizarLocacaoController">
    <children>
-      <TableView layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="573.0">
+      <TableView fx:id="jogoTableView" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="573.0">
         <columns>
           <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="nomeColumn" prefWidth="361.0" text="Nome" />
-            <TableColumn fx:id="estadoColumn" prefWidth="136.0" text="Estado" />
+          <TableColumn fx:id="nomeColumn" prefWidth="497.0" text="Nome" />
         </columns>
       </TableView>
-      <TableView layoutX="14.0" layoutY="214.0" prefHeight="173.0" prefWidth="235.0">
+      <TableView fx:id="clienteTableView" layoutX="14.0" layoutY="214.0" prefHeight="173.0" prefWidth="235.0">
         <columns>
           <TableColumn fx:id="loginColumn" prefWidth="234.0" text="Login" />
         </columns>
@@ -34,7 +32,7 @@
             <Font size="39.0" />
          </font>
       </Label>
-      <Button defaultButton="true" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" text="Finalizar" />
-      <Button layoutX="467.0" layoutY="361.0" mnemonicParsing="false" text="Voltar" />
+      <Button defaultButton="true" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" onAction="#finalizarActionHandler" text="Finalizar" />
+      <Button layoutX="467.0" layoutY="361.0" mnemonicParsing="false" onAction="#voltarActionHandler" text="Voltar" />
    </children>
 </AnchorPane>

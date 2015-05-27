@@ -6,18 +6,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaCadastrarObservadorController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaCadastrarObservadorController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="Cliente" />
       <Label layoutX="300.0" layoutY="14.0" text="Jogo" />
-      <TableView layoutX="14.0" layoutY="31.0" prefHeight="313.0" prefWidth="260.0">
+      <TableView fx:id="clienteTableView" layoutX="14.0" layoutY="31.0" prefHeight="313.0" prefWidth="260.0">
         <columns>
           <TableColumn fx:id="cpfColumn" prefWidth="120.0" text="CPF" />
             <TableColumn fx:id="loginColumn" prefWidth="154.0" text="Login" />
         </columns>
       </TableView>
-      <TableView layoutX="300.0" layoutY="31.0" prefHeight="313.0" prefWidth="291.0">
+      <TableView fx:id="jogoTableView" layoutX="300.0" layoutY="31.0" prefHeight="313.0" prefWidth="291.0">
         <columns>
           <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
           <TableColumn fx:id="nomeColumn" prefWidth="215.0" text="Nome" />

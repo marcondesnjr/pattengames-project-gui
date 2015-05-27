@@ -6,10 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaDeletarObservadorController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaDeletarObservadorController">
    <children>
-      <TableView layoutX="14.0" layoutY="14.0" prefHeight="337.0" prefWidth="575.0">
+      <TableView fx:id="obsTableView" layoutX="14.0" layoutY="14.0" prefHeight="337.0" prefWidth="575.0">
         <columns>
           <TableColumn fx:id="loginColumn" prefWidth="235.0" text="Login do Cliente" />
           <TableColumn fx:id="nomeColumn" prefWidth="339.0" text="Nome do Jogo" />

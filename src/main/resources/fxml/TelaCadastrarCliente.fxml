@@ -18,7 +18,7 @@
       <TextField fx:id="cpfTextField" layoutX="14.0" layoutY="149.0" prefHeight="25.0" prefWidth="277.0" promptText="CPF" />
       <Label layoutX="14.0" layoutY="174.0" text="Email" />
       <TextField fx:id="emailTextField" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="277.0" promptText="Email" />
-      <Button fx:id="concluirActionHandler" defaultButton="true" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" text="Concluir" />
-      <Button fx:id="voltarActionHandler" cancelButton="true" layoutX="463.0" layoutY="361.0" mnemonicParsing="false" text="Voltar" />
+      <Button defaultButton="true" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" onAction="#concluirActionHandler" text="Concluir" />
+      <Button cancelButton="true" layoutX="463.0" layoutY="361.0" mnemonicParsing="false" onAction="#voltarActionHandler" text="Voltar" />
    </children>
 </AnchorPane>

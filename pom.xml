@@ -4,7 +4,7 @@
 
     <groupId>io.github.marcondesnjr</groupId>
     <artifactId>patterngames-gui</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>patterngames-gui</name>
@@ -105,6 +105,11 @@
         </plugins>
     </build>
     <dependencies>
-        
+        <dependency>
+            <groupId>org.bitbucket.marcondesads</groupId>
+            <artifactId>patterngames-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

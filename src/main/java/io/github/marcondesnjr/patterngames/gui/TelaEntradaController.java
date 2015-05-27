@@ -8,6 +8,11 @@ package io.github.marcondesnjr.patterngames.gui;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
+import javafx.scene.control.DialogPane;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -21,7 +26,8 @@ public class TelaEntradaController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
+        
     }    
     
 }

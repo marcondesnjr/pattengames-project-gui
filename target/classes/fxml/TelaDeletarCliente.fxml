@@ -6,9 +6,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaDeletarClienteController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.marcondesnjr.patterngames.gui.TelaDeletarClienteController">
    <children>
-      <Label layoutX="216.0" layoutY="192.0" text="Label" />
+      <TableView fx:id="clienteTableView" layoutX="14.0" layoutY="14.0" prefHeight="341.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="cpfColumn" prefWidth="85.0" text="CPF" />
+          <TableColumn fx:id="loginColumn" prefWidth="75.0" text="Login" />
+            <TableColumn fx:id="nomeColumn" prefWidth="255.0" text="Nome" />
+            <TableColumn fx:id="EmailColumn" prefWidth="158.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button layoutX="536.0" layoutY="362.0" mnemonicParsing="false" onAction="#excluirActionHandler" text="Excluir" />
+      <Button layoutX="479.0" layoutY="362.0" mnemonicParsing="false" onAction="#voltarActionHandler" text="Voltar" />
    </children>
 </AnchorPane>
