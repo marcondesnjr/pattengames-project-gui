@@ -10,6 +10,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -63,6 +65,17 @@ public class TelaRealizarDesalocacaoController implements Initializable {
             locB.setNomeJogo(loc.getJogo().getNome());
             locTableView.getItems().add(locB);
         }
+        
+        locTableView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<LocBean>() {
+
+            @Override
+            public void changed(ObservableValue<? extends LocBean> observable, LocBean oldValue, LocBean newValue) {
+                Locacao loc = LocacaoManager.localizaLocacao(newValue.getId());
+                precoLabel.setText(String.format("%.2f", loc.calcularValor()));
+                multaLabel.setText(String.format("%.2f", loc.calcularMulta()));
+                totalLabel.setText(String.format("%.2f", loc.calcularValor() + loc.calcularMulta()));
+            }
+        });
         
     }    
 
